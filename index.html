@@ -55,7 +55,7 @@
                 <a href="#contact" class="hover:text-brand-yellow transition">Contact</a>
             </nav>
             <div class="md:hidden">
-                <button aria-label="menu" class="p-2 bg-panel rounded-md border border-gray-800">
+                <button id="mobile-menu-btn" aria-label="menu" class="p-2 bg-panel rounded-md border border-gray-800">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
@@ -64,6 +64,18 @@
                 </button>
             </div>
         </header>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu"
+            class="hidden md:hidden absolute top-20 left-0 right-0 bg-[#0b0b0b] border-b border-gray-800 p-6 z-50 shadow-2xl">
+            <nav class="flex flex-col gap-4 text-center">
+                <a href="#hero" class="block py-2 text-gray-300 hover:text-brand-yellow transition">Home</a>
+                <a href="#about" class="block py-2 text-gray-300 hover:text-brand-yellow transition">About</a>
+                <a href="#projects" class="block py-2 text-gray-300 hover:text-brand-yellow transition">Projects</a>
+                <a href="#skills" class="block py-2 text-gray-300 hover:text-brand-yellow transition">Skills</a>
+                <a href="#contact" class="block py-2 text-gray-300 hover:text-brand-yellow transition">Contact</a>
+            </nav>
+        </div>
 
         <!-- MAIN -->
         <main class="px-6 lg:px-12">

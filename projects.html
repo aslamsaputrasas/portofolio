@@ -61,16 +61,27 @@
                 <a href="index.html#contact" class="hover:text-brand-yellow transition">Contact</a>
             </nav>
             <div class="md:hidden">
-                <a href="index.html" aria-label="back"
+                <button id="mobile-menu-btn" aria-label="menu"
                     class="p-2 bg-panel rounded-md border border-gray-800 inline-flex items-center justify-center text-gray-400 hover:text-brand-yellow transition">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                            d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
-                </a>
+                </button>
             </div>
         </header>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu"
+            class="hidden md:hidden absolute top-20 left-0 right-0 bg-[#0b0b0b] border-b border-gray-800 p-6 z-50 shadow-2xl">
+            <nav class="flex flex-col gap-4 text-center">
+                <a href="index.html" class="block py-2 text-gray-300 hover:text-brand-yellow transition">Home</a>
+                <a href="projects.html" class="block py-2 text-brand-yellow font-medium">Projects</a>
+                <a href="index.html#contact"
+                    class="block py-2 text-gray-300 hover:text-brand-yellow transition">Contact</a>
+            </nav>
+        </div>
 
         <!-- MAIN -->
         <main class="px-6 lg:px-12 py-12 space-y-12">
@@ -116,25 +127,60 @@
                             <h4 class="text-xs text-gray-500 uppercase tracking-widest mb-4 font-semibold">Software
                             </h4>
                             <div class="flex flex-wrap gap-4 items-center">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg"
-                                    class="w-8 h-8 hover:scale-110 transition-transform duration-300"
-                                    title="Adobe Photoshop" alt="Photoshop">
+                                <!-- Photoshop -->
+                                <div class="relative group/tooltip">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg"
+                                        class="w-8 h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
+                                        alt="Photoshop">
+                                    <span
+                                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-gray-900 rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10">
+                                        Adobe Photoshop
+                                    </span>
+                                </div>
 
-                                <img src="images/Logo Ilustrator.webp"
-                                    class="w-8 h-8 hover:scale-110 transition-transform duration-300"
-                                    title="Adobe Illustrator" alt="Illustrator">
+                                <!-- Illustrator -->
+                                <div class="relative group/tooltip">
+                                    <img src="images/Logo Ilustrator.webp"
+                                        class="w-8 h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
+                                        alt="Illustrator">
+                                    <span
+                                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-gray-900 rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10">
+                                        Adobe Illustrator
+                                    </span>
+                                </div>
 
-                                <img src="images/Logo Canva.png"
-                                    class="w-8 h-8 hover:scale-110 transition-transform duration-300" title="Canva"
-                                    alt="Canva">
+                                <!-- Canva -->
+                                <div class="relative group/tooltip">
+                                    <img src="images/Logo Canva.png"
+                                        class="w-8 h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
+                                        alt="Canva">
+                                    <span
+                                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-gray-900 rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10">
+                                        Canva
+                                    </span>
+                                </div>
 
-                                <img src="images/Logo Ibispaint X.png"
-                                    class="w-8 h-8 hover:scale-110 transition-transform duration-300"
-                                    title="IbisPaint X" alt="IbisPaint X">
+                                <!-- IbisPaint X -->
+                                <div class="relative group/tooltip">
+                                    <img src="images/Logo Ibispaint X.png"
+                                        class="w-8 h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
+                                        alt="IbisPaint X">
+                                    <span
+                                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-gray-900 rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10">
+                                        IbisPaint X
+                                    </span>
+                                </div>
 
-                                <img src="images/Logo Sketchup.png"
-                                    class="w-8 h-8 hover:scale-110 transition-transform duration-300" title="Sketchup"
-                                    alt="Sketchup">
+                                <!-- Sketchup -->
+                                <div class="relative group/tooltip">
+                                    <img src="images/Logo Sketchup.png"
+                                        class="w-8 h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
+                                        alt="Sketchup">
+                                    <span
+                                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-gray-900 rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10">
+                                        Sketchup
+                                    </span>
+                                </div>
                             </div>
                         </div>
 
@@ -187,17 +233,38 @@
                             <h4 class="text-xs text-gray-500 uppercase tracking-widest mb-4 font-semibold">Software
                             </h4>
                             <div class="flex flex-wrap gap-4 items-center">
-                                <img src="images/Logo After Effetcts.png"
-                                    class="w-8 h-8 hover:scale-110 transition-transform duration-300"
-                                    title="Adobe After Effects" alt="After Effects">
+                                <!-- After Effects -->
+                                <div class="relative group/tooltip">
+                                    <img src="images/Logo After Effetcts.png"
+                                        class="w-8 h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
+                                        alt="After Effects">
+                                    <span
+                                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-gray-900 rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10">
+                                        Adobe After Effects
+                                    </span>
+                                </div>
 
-                                <img src="images/Logo Capcut.png"
-                                    class="w-8 h-8 hover:scale-110 transition-transform duration-300" title="CapCut"
-                                    alt="CapCut">
+                                <!-- CapCut -->
+                                <div class="relative group/tooltip">
+                                    <img src="images/Logo Capcut.png"
+                                        class="w-8 h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
+                                        alt="CapCut">
+                                    <span
+                                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-gray-900 rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10">
+                                        CapCut
+                                    </span>
+                                </div>
 
-                                <img src="images/Logo Premiere.png"
-                                    class="w-8 h-8 hover:scale-110 transition-transform duration-300"
-                                    title="Adobe Premiere" alt="Premiere Pro">
+                                <!-- Premiere Pro -->
+                                <div class="relative group/tooltip">
+                                    <img src="images/Logo Premiere.png"
+                                        class="w-8 h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
+                                        alt="Premiere Pro">
+                                    <span
+                                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-gray-900 rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10">
+                                        Adobe Premiere Pro
+                                    </span>
+                                </div>
                             </div>
                         </div>
 
@@ -250,34 +317,76 @@
                             <h4 class="text-xs text-gray-500 uppercase tracking-widest mb-4 font-semibold">Software
                             </h4>
                             <div class="flex flex-wrap gap-4 items-center mb-6">
-                                <img src="images/Logo Wordpress.png"
-                                    class="w-8 h-8 hover:scale-110 transition-transform duration-300" title="WordPress"
-                                    alt="WordPress">
+                                <!-- WordPress -->
+                                <div class="relative group/tooltip">
+                                    <img src="images/Logo Wordpress.png"
+                                        class="w-8 h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
+                                        alt="WordPress">
+                                    <span
+                                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-gray-900 rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10">
+                                        WordPress
+                                    </span>
+                                </div>
 
-                                <img src="images/Logo Antigravity.png"
-                                    class="w-8 h-8 hover:scale-110 transition-transform duration-300"
-                                    title="Antigravity" alt="Antigravity">
+                                <!-- Antigravity -->
+                                <div class="relative group/tooltip">
+                                    <img src="images/Logo Antigravity.png"
+                                        class="w-8 h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
+                                        alt="Antigravity">
+                                    <span
+                                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-gray-900 rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10">
+                                        Antigravity
+                                    </span>
+                                </div>
                             </div>
 
                             <!-- Bahasa Section -->
                             <h4 class="text-xs text-gray-500 uppercase tracking-widest mb-4 font-semibold">Bahasa
                             </h4>
                             <div class="flex flex-wrap gap-4 items-center">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-                                    class="w-8 h-8 hover:scale-110 transition-transform duration-300" title="HTML5"
-                                    alt="HTML">
+                                <!-- HTML5 -->
+                                <div class="relative group/tooltip">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                                        class="w-8 h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
+                                        alt="HTML">
+                                    <span
+                                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-gray-900 rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10">
+                                        HTML5
+                                    </span>
+                                </div>
 
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-                                    class="w-8 h-8 hover:scale-110 transition-transform duration-300" title="CSS3"
-                                    alt="CSS">
+                                <!-- CSS3 -->
+                                <div class="relative group/tooltip">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                                        class="w-8 h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
+                                        alt="CSS">
+                                    <span
+                                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-gray-900 rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10">
+                                        CSS3
+                                    </span>
+                                </div>
 
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-                                    class="w-8 h-8 hover:scale-110 transition-transform duration-300" title="JavaScript"
-                                    alt="JS">
+                                <!-- JavaScript -->
+                                <div class="relative group/tooltip">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                                        class="w-8 h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
+                                        alt="JS">
+                                    <span
+                                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-gray-900 rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10">
+                                        JavaScript
+                                    </span>
+                                </div>
 
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-                                    class="w-8 h-8 hover:scale-110 transition-transform duration-300"
-                                    title="Tailwind CSS" alt="Tailwind">
+                                <!-- Tailwind -->
+                                <div class="relative group/tooltip">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                                        class="w-8 h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
+                                        alt="Tailwind">
+                                    <span
+                                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-gray-900 rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10">
+                                        Tailwind CSS
+                                    </span>
+                                </div>
                             </div>
                         </div>
 
