@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio — Project Detail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="css/tailwind-config.js"></script>
+</head>
+
+<body class="bg-bg-deep font-inter text-gray-200 antialiased relative overflow-x-hidden">
+
+    <!-- Background bergerak -->
+    <div class="motion-bg" aria-hidden="true"></div>
+    <div class="particles" aria-hidden="true">
+        <span style="top:10%;left:20%;animation-delay:0s;"></span>
+        <span style="top:30%;left:60%;animation-delay:1s;"></span>
+        <span style="top:70%;left:40%;animation-delay:2s;"></span>
+        <span style="top:50%;left:80%;animation-delay:3s;"></span>
+        <span style="top:90%;left:10%;animation-delay:4s;"></span>
+        <span style="top:20%;left:70%;animation-delay:5s;"></span>
+        <span style="top:40%;left:30%;animation-delay:6s;"></span>
+        <span style="top:75%;left:50%;animation-delay:7s;"></span>
+    </div>
+    <canvas id="rippleCanvas"></canvas>
+
+    <div class="min-h-screen grid grid-rows-[auto_1fr_auto] relative z-10">
+        <!-- NAV -->
+        <header class="w-full py-6 px-6 lg:px-12 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 rounded-md bg-gradient-to-br from-yellow-400 to-brand-yellow flex items-center justify-center shadow-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-black" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M3 12h18M3 6h18M3 18h18" />
+                    </svg>
+                </div>
+                <span class="font-bold tracking-wider text-lg">SAS<span
+                        class="text-brand-yellow">Portofolio</span>.</span>
+            </a>
+            <nav class="hidden md:flex gap-8 items-center text-sm text-gray-300">
+                <a href="index.html" class="hover:text-brand-yellow transition">Home</a>
+                <a href="projects.html" class="hover:text-brand-yellow transition">Projects</a>
+                <a href="index.html#contact" class="hover:text-brand-yellow transition">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <a href="projects.html" aria-label="back"
+                    class="p-2 bg-panel rounded-md border border-gray-800 inline-flex items-center justify-center text-gray-400 hover:text-brand-yellow transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                </a>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <main class="px-6 lg:px-12 py-12 max-w-5xl mx-auto w-full">
+            <!-- Project Header -->
+            <div class="mb-12">
+                <a href="projects.html"
+                    class="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-brand-yellow transition mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    Kembali ke Proyek
+                </a>
+                <h1 class="text-4xl md:text-5xl font-extrabold neon mb-4">Project <span class="text-brand-yellow">Proses
+                        Terjadinya Kehamilan</span></h1>
+                <p class="text-gray-400 text-lg">Deskripsi Detail Proyek dan Tujuannya</p>
+            </div>
+
+            <!-- Main Content -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <!-- Left Column: Visual Showcase -->
+                <div class="lg:col-span-2 space-y-8">
+                    <!-- Project Image/Video -->
+                    <div
+                        class="rounded-2xl overflow-hidden border border-gray-800 bg-panel/50 shadow-2xl aspect-video relative group">
+                        <!-- Ganti src dengan path file screenshot Anda, misalnya: img/project-ss.jpg -->
+                        <img src="images/SS Motion.png" alt="Showcase Proyek"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+
+                        <!-- Overlay gelap tipis agar teks di atasnya (jika ada) lebih terbaca -->
+                        <div class="absolute inset-0 bg-black/10 pointer-events-none"></div>
+                    </div>
+
+                    <!-- Project Info Sections -->
+                    <section
+                        class="p-8 rounded-2xl bg-gradient-to-b from-[#0b0b0b]/60 to-[#0e1013]/40 border border-gray-800 backdrop-blur-sm">
+                        <h2 class="text-2xl font-bold mb-6 text-white">Deskripsi Proyek</h2>
+                        <div class="prose prose-invert text-gray-400 max-w-none space-y-4">
+                            <p>
+                                Motion graphic ini dibuat sebagai media visual edukasi yang menjelaskan proses
+                                terjadinya kehamilan dari tahap pembuahan hingga perkembangan awal. Konten dikembangkan
+                                untuk menyederhanakan materi biologis yang kompleks menjadi visual yang lebih mudah
+                                dipahami dan komunikatif.
+                            </p>
+                            <p>
+                                Video menggunakan pendekatan ilustratif dengan struktur animasi yang mengikuti alur
+                                narasi secara sistematis.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section
+                        class="p-8 rounded-2xl bg-gradient-to-b from-[#0b0b0b]/60 to-[#0e1013]/40 border border-gray-800 backdrop-blur-sm">
+                        <h2 class="text-2xl font-bold mb-6 text-white">Tentang Project</h2>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <!-- Objective: Points -->
+                            <li class="flex items-start gap-3 text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow mt-1.5 shrink-0"></span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-1">Objective</strong>
+                                    <ul class="space-y-1 list-disc ml-5">
+                                        <li>Menerjemahkan materi biologis menjadi storytelling visual.</li>
+                                        <li>Meningkatkan pemahaman audiens melalui kombinasi teks, ilustrasi, dan
+                                            animasi.</li>
+                                        <li>Menjaga keseimbangan antara estetika visual dan kejelasan informasi.</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- My Role: Points -->
+                            <li class="flex items-start gap-3 text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow mt-1.5 shrink-0"></span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-1">My Role</strong>
+                                    <ul class="space-y-1 list-disc ml-5">
+                                        <li>Konsep & Desain</li>
+                                        <li>Pencarian & Persiapan Aset</li>
+                                        <li>Animasi dan Pergerakan Visual</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- Creative Approach: Description -->
+                            <li class="flex items-start gap-3 text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow mt-1.5 shrink-0"></span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-2">Creative Approach</strong>
+                                    <div class="space-y-4">
+                                        <p class="leading-relaxed">Proses animasi dikembangkan berdasarkan narasi
+                                            referensi.
+                                            Struktur visual dibangun mengikuti urutan penjelasan suara, sehingga setiap
+                                            transisi dan pergerakan elemen memiliki dasar informasi yang jelas.</p>
+                                        <p class="leading-relaxed">Alih-alih menggunakan storyboard formal, sequencing
+                                            dilakukan langsung di timeline dengan membagi narasi menjadi beberapa segmen
+                                            utama, kemudian menerjemahkannya ke dalam komposisi visual bertahap.</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Visual Strategy: Points -->
+                            <li class="flex items-start gap-3 text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow mt-1.5 shrink-0"></span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-1">Visual Strategy</strong>
+                                    <ul class="space-y-1 list-disc ml-5">
+                                        <li>Menggunakan ilustrasi flat untuk menjaga kesan edukatif dan mudah dipahami.
+                                        </li>
+                                        <li>Warna lembut dan tata letak dibuat sederhana agar fokus tetap pada alur
+                                            pembelajaran.</li>
+                                        <li>Elemen teks ditempatkan untuk memperkuat penjelasan visual, bukan
+                                            mendominasi layar.</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- Motion Strategy: Points -->
+                            <li class="flex items-start gap-3 text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow mt-1.5 shrink-0"></span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-1">Motion Strategy</strong>
+                                    <ul class="space-y-1 list-disc ml-5">
+                                        <li>Transisi yang halus (Smooth transitions).</li>
+                                        <li>Timing animasi disesuaikan dengan tempo narasi.</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- Tools: Points -->
+                            <li class="flex items-start gap-3 text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow mt-1.5 shrink-0"></span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-1">Tools</strong>
+                                    <ul class="space-y-1 list-disc ml-5">
+                                        <li>Adobe After Effects</li>
+                                        <li>Adobe Illustrator</li>
+                                        <li>Ibis Paint X (Membuat ilustrasi tambahan)</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- Reference: Description -->
+                            <li class="flex items-start gap-3 text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow mt-1.5 shrink-0"></span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-2">Reference</strong>
+                                    <div class="space-y-4">
+                                        <p class="leading-relaxed">Narasi dalam motion graphic ini diadaptasi dari video
+                                            edukatif berikut: “PROSES TERJADINYA KEHAMILAN: Dari Pembuahan Hingga
+                                            Persalinan” — YouTube
+                                            <a
+                                                href="https://www.youtube.com/watch?v=8Doz02a0Hp0">(https://www.youtube.com/watch?v=8Doz02a0Hp0)</a>
+                                        </p>
+                                        <p class="leading-relaxed">Narasi tersebut digunakan sebagai referensi struktur
+                                            informasi dan alur penjelasan, kemudian dikembangkan ulang dalam bentuk
+                                            visual
+                                            animasi.</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Challenges: Points -->
+                            <li class="flex items-start gap-3 text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow mt-1.5 shrink-0"></span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-1">Challenges</strong>
+                                    <ul class="space-y-1 list-disc ml-5">
+                                        <li>Mengatur tempo visual agar tidak terlalu cepat untuk konten edukatif.</li>
+                                        <li>Mencari Asset gratis yang sesuai dengan konten.</li>
+                                        <li>Menjaga keseimbangan antara ilustrasi dan teks agar tidak terlalu ramai.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- Outcome: Points -->
+                            <li class="flex items-start gap-3 text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow mt-1.5 shrink-0"></span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-1">Outcome</strong>
+                                    <ul class="space-y-1 list-disc list-inside">
+                                        <li>Visual sampaian yang informatif.</li>
+                                        <li>Mendapat feedback positif dari audiens.</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <!-- Right Column: Project Meta -->
+                <aside class="space-y-6">
+                    <div
+                        class="p-6 rounded-2xl bg-gradient-to-b from-[#0b0b0b]/80 to-[#0e1013]/60 border border-gray-800 shadow-xl sticky top-12">
+                        <h3 class="text-sm text-gray-500 uppercase tracking-widest mb-6 font-semibold">Detail Info</h3>
+
+                        <div class="space-y-6">
+                            <div>
+                                <div class="text-xs text-gray-500 uppercase mb-1">Kategori</div>
+                                <div class="text-gray-200 font-medium">Motion Grafis</div>
+                            </div>
+
+                            <div>
+                                <div class="text-xs text-gray-500 uppercase mb-1">Tahun</div>
+                                <div class="text-gray-200 font-medium">2024</div>
+                            </div>
+
+                            <div>
+                                <div class="text-xs text-gray-500 uppercase mb-2">Tools & Software</div>
+                                <div class="flex flex-wrap gap-3">
+                                    <span
+                                        class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-300">After
+                                        Effects</span>
+                                    <span
+                                        class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-300">Illustrator</span>
+                                    <span
+                                        class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-300">Ibis
+                                        Paint X</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="px-6 lg:px-12 py-10 border-t border-gray-900 text-xs text-gray-400">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>© 2025 Aslam — All rights reserved.</div>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="hover:text-brand-yellow transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-brand-yellow transition">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
