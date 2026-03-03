@@ -52,10 +52,21 @@
                 <a href="projects.html" class="hover:text-brand-yellow transition">Projects</a>
                 <a href="index.html#contact" class="hover:text-brand-yellow transition">Contact</a>
             </nav>
+            <div class="md:hidden">
+                <a href="detail-motion.html" aria-label="back"
+                    class="p-2 bg-panel rounded-md border border-gray-800 inline-flex items-center justify-center text-gray-400 hover:text-brand-yellow transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                </a>
+            </div>
         </header>
 
         <!-- MAIN -->
         <main class="px-6 lg:px-12 py-12 max-w-5xl mx-auto w-full">
+            <!-- Project Header -->
             <div class="mb-12">
                 <a href="detail-motion.html"
                     class="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-brand-yellow transition mb-6">
@@ -66,25 +77,159 @@
                     </svg>
                     Kembali ke Motion Portfolio
                 </a>
-                <h1 class="text-4xl md:text-5xl font-extrabold neon mb-4">Project 2: <span
-                        class="text-brand-yellow">Mikroskill LLM</span></h1>
-                <p class="text-gray-400 text-lg">Memasukkan Deskripsi Ide Usaha ke LLM.</p>
+                <h1 class="text-4xl md:text-5xl font-extrabold neon mb-4">Project <span
+                        class="text-brand-yellow">Mikroskill, Memasukkan Deskripsi Ide Usaha ke LLM</span></h1>
+                <p class="text-gray-400 text-lg">Deskripsi Detail Proyek dan Tujuannya.</p>
             </div>
 
+            <!-- Main Content -->
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <!-- Left Column: Visual Showcase -->
                 <div class="lg:col-span-2 space-y-8">
+                    <!-- Project Image/Video -->
                     <div
                         class="rounded-2xl overflow-hidden border border-gray-800 bg-panel/50 shadow-2xl aspect-video relative group">
-                        <img src="images/SS Motion.png" alt="Showcase Proyek" class="w-full h-full object-cover">
+                        <img src="images/ss Motionkominfo.png" alt="Showcase Proyek"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/10 pointer-events-none"></div>
                     </div>
+
+                    <!-- Project Info Sections -->
                     <section
                         class="p-8 rounded-2xl bg-gradient-to-b from-[#0b0b0b]/60 to-[#0e1013]/40 border border-gray-800 backdrop-blur-sm">
                         <h2 class="text-2xl font-bold mb-6 text-white">Deskripsi Proyek</h2>
-                        <p class="text-gray-400">Project kolaborasi bersama Mikroskill saat magang di PT Kidsnesia
-                            Edupark Kreasi.</p>
+                        <div class="prose prose-invert text-gray-400 max-w-none space-y-4">
+                            <p>Video motion graphic edukatif yang membahas cara memasukkan deskripsi
+                                ide usaha atau usaha yang sudah berjalan ke dalam Large Language Model (LLM) seperti
+                                ChatGPT
+                                dan Gemini. Project ini merupakan bagian dari kolaborasi bersama Mikroskill dan BBPSDMP
+                                Medan dalam pengembangan materi literasi digital untuk pelaku UMKM.</p>
+
+                            <p>Materi difokuskan pada teknik penyusunan prompt menggunakan metode RDQ
+                                (Role, Detail,
+                                Question) agar AI dapat menghasilkan jawaban yang relevan, terstruktur, dan aplikatif
+                                untuk
+                                kebutuhan pengembangan bisnis.</p>
+                        </div>
+                    </section>
+
+                    <section
+                        class="p-8 rounded-2xl bg-gradient-to-b from-[#0b0b0b]/60 to-[#0e1013]/40 border border-gray-800 backdrop-blur-sm">
+                        <h2 class="text-2xl font-bold mb-6 text-white">Tentang Project</h2>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <!-- Objective: Points -->
+                            <li class="flex items-start gap-3 text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow mt-1.5 shrink-0"></span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-1">Objective</strong>
+                                    <ul class="space-y-1 list-disc ml-5">
+                                        <li>Memberikan pemahaman tentang penggunaan LLM untuk UMKM.</li>
+                                        <li>Menjelaskan metode prompt RDQ secara visual.</li>
+                                        <li>Membantu pelaku usaha mengoptimalkan AI.</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- My Role: Points -->
+                            <li class="flex items-start gap-3 text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow mt-1.5 shrink-0"></span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-1">My Role</strong>
+                                    <ul class="space-y-1 list-disc ml-5">
+                                        <li>Concept, dubbing & Scripting</li>
+                                        <li>Menerjemahkan materi pembelajaran menjadi visual yang komunikatif.</li>
+                                        <li>Mengatur ritme animasi agar selaras dengan narasi edukatif.</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- Creative Approach: Description -->
+                            <li class="flex items-start gap-3 text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow mt-1.5 shrink-0"></span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-2">Creative Approach</strong>
+                                    <div class="space-y-4">
+                                        <p class="leading-relaxed">Pendekatan kreatif dalam project ini berfokus pada
+                                            penyederhanaan konsep teknis menjadi alur visual yang sistematis dan mudah
+                                            dipahami.</p>
+                                        <p class="leading-relaxed">Struktur materi dibangun seperti proses berpikir:
+                                            dimulai dari pengenalan AI, pemahaman prompt, breakdown metode RDQ, hingga
+                                            simulasi langsung memasukkan deskripsi usaha.</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Visual Strategy: Points -->
+                            <li class="flex items-start gap-3 text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow mt-1.5 shrink-0"></span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-1">Visual Strategy</strong>
+                                    <ul class="space-y-1 list-disc ml-5">
+                                        <li>Menggunakan tipografi sebagai elemen utama untuk menegaskan istilah penting
+                                            seperti Role, Detail, dan Question.</li>
+                                        <li>Menerapkan layout yang bersih dan terstruktur untuk membedakan setiap
+                                            tahapan metode.</li>
+                                        <li>Mengedepankan desain minimalis agar fokus tetap pada isi materi.</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- Motion Strategy: Points -->
+                            <li class="flex items-start gap-3 text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow mt-1.5 shrink-0"></span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-1">Motion Strategy</strong>
+                                    <ul class="space-y-1 list-disc ml-5">
+                                        <li>Progressive reveal untuk menjelaskan metode RDQ secara bertahap.</li>
+                                        <li>Transisi clean dan stabil untuk menjaga kenyamanan visual dalam konteks
+                                            pembelajaran.</li>
+                                        <li>Penekanan animasi pada kata kunci guna memperkuat pemahaman audiens.</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- Tools: Points -->
+                            <li class="flex items-start gap-3 text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow mt-1.5 shrink-0"></span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-1">Tools</strong>
+                                    <ul class="space-y-1 list-disc ml-5">
+                                        <li>Adobe After Effects</li>
+                                        <li>Adobe Illustrator</li>
+                                        <li>CapCut (Editing Akhir)</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- Challenges: Points -->
+                            <li class="flex items-start gap-3 text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow mt-1.5 shrink-0"></span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-1">Challenges</strong>
+                                    <ul class="space-y-1 list-disc ml-5">
+                                        <li>Mengatur tempo visual agar tidak terlalu cepat.</li>
+                                        <li>Mencari aset visual yang relevan dengan dunia bisnis UMKM.</li>
+                                        <li>Menjaga keseimbangan antara ilustrasi dan teks.</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- Outcome: Points -->
+                            <li class="flex items-start gap-3 text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow mt-1.5 shrink-0"></span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-1">Outcome</strong>
+                                    <ul class="space-y-1 list-disc ml-5">
+                                        <li>Materi tersampaikan secara terstruktur dan mudah dipahami.</li>
+                                        <li>Mendukung peningkatan literasi digital bagi pelaku UMKM.</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
                     </section>
                 </div>
 
+                <!-- Right Column: Project Meta -->
                 <aside class="space-y-6">
                     <div
                         class="p-6 rounded-2xl bg-gradient-to-b from-[#0b0b0b]/80 to-[#0e1013]/60 border border-gray-800 shadow-xl sticky top-12">
@@ -95,7 +240,11 @@
                                 <div class="text-gray-200 font-medium">Motion Grafis</div>
                             </div>
                             <div>
-                                <div class="text-xs text-gray-500 uppercase mb-2">Tools</div>
+                                <div class="text-xs text-gray-500 uppercase mb-1">Tahun</div>
+                                <div class="text-gray-200 font-medium">2024</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 uppercase mb-2">Tools & Software</div>
                                 <div class="flex flex-wrap gap-3">
                                     <span
                                         class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-300">After
@@ -110,10 +259,18 @@
             </div>
         </main>
 
+        <!-- FOOTER -->
         <footer class="px-6 lg:px-12 py-10 border-t border-gray-900 text-xs text-gray-400">
-            <div>© 2025 Aslam — All rights reserved.</div>
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>© 2025 Aslam — All rights reserved.</div>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="hover:text-brand-yellow transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-brand-yellow transition">Terms of Service</a>
+                </div>
+            </div>
         </footer>
     </div>
+    <!-- JS -->
     <script src="js/main.js"></script>
 </body>
 
