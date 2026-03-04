@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio — Motion Reel 2 Detail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="css/tailwind-config.js"></script>
+</head>
+
+<body class="bg-bg-deep font-inter text-gray-200 antialiased relative overflow-x-hidden">
+    <div class="motion-bg" aria-hidden="true"></div>
+    <div class="particles" aria-hidden="true">
+        <span style="top:10%;left:20%;animation-delay:0s;"></span>
+        <span style="top:30%;left:60%;animation-delay:1s;"></span>
+        <span style="top:70%;left:40%;animation-delay:2s;"></span>
+        <span style="top:50%;left:80%;animation-delay:3s;"></span>
+        <span style="top:90%;left:10%;animation-delay:4s;"></span>
+        <span style="top:20%;left:70%;animation-delay:5s;"></span>
+        <span style="top:40%;left:30%;animation-delay:6s;"></span>
+        <span style="top:75%;left:50%;animation-delay:7s;"></span>
+    </div>
+    <canvas id="rippleCanvas"></canvas>
+
+    <div class="min-h-screen grid grid-rows-[auto_1fr_auto] relative z-10">
+        <header class="w-full py-6 px-6 lg:px-12 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 rounded-md bg-gradient-to-br from-yellow-400 to-brand-yellow flex items-center justify-center shadow-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-black" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M3 12h18M3 6h18M3 18h18" />
+                    </svg>
+                </div>
+                <span class="font-bold tracking-wider text-lg">SAS<span
+                        class="text-brand-yellow">Portofolio</span>.</span>
+            </a>
+            <nav class="hidden md:flex gap-8 items-center text-sm text-gray-300">
+                <a href="index.html" class="hover:text-brand-yellow transition">Home</a>
+                <a href="projects.html" class="hover:text-brand-yellow transition">Projects</a>
+                <a href="index.html#contact" class="hover:text-brand-yellow transition">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <a href="detail-motion.html" aria-label="back"
+                    class="p-2 bg-panel rounded-md border border-gray-800 inline-flex items-center justify-center text-gray-400 hover:text-brand-yellow transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                </a>
+            </div>
+        </header>
+
+        <main class="px-6 lg:px-12 py-12 max-w-5xl mx-auto w-full">
+            <div class="mb-12">
+                <a href="detail-motion.html"
+                    class="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-brand-yellow transition mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    Kembali ke Motion Portfolio
+                </a>
+                <h1 class="text-4xl md:text-5xl font-extrabold neon mb-4">Motion Design <span
+                        class="text-brand-yellow">Reel 2</span></h1>
+                <p class="text-gray-400 text-lg">Eksplorasi Motion Design & Video Editing</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2 space-y-8">
+                    <div
+                        class="rounded-2xl overflow-hidden border border-gray-800 bg-panel/50 shadow-2xl aspect-[9/16] max-w-[400px] mx-auto relative group">
+                        <iframe class="w-full h-full"
+                            src="https://drive.google.com/file/d/1Vds-UdTs9ZDp6YejYgTma0ERaZj-hEw_/preview"
+                            title="Motion Reel 2 Detail" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <section
+                        class="p-8 rounded-2xl bg-gradient-to-b from-[#0b0b0b]/60 to-[#0e1013]/40 border border-gray-800 backdrop-blur-sm">
+                        <h2 class="text-2xl font-bold mb-6 text-white">Deskripsi Proyek</h2>
+                        <div class="prose prose-invert text-gray-400 max-w-none space-y-4">
+                            <p>
+                                Project ini merupakan bagian dari portofolio Motion Design yang menampilkan kemampuan
+                                dalam mengolah aset visual menjadi konten video yang dinamis dalam format vertikal.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section
+                        class="p-8 rounded-2xl bg-gradient-to-b from-[#0b0b0b]/60 to-[#0e1013]/40 border border-gray-800 backdrop-blur-sm">
+                        <h2 class="text-2xl font-bold mb-6 text-white">Tentang Project</h2>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <li class="flex items-start gap-3 text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow mt-1.5 shrink-0"></span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-1">Objective</strong>
+                                    <ul class="space-y-1 list-disc ml-5">
+                                        <li>Menampilkan teknik motion graphics dalam format reels.</li>
+                                        <li>Optimasi penyampaian pesan melalui visual yang bergerak.</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow mt-1.5 shrink-0"></span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-1">My Role</strong>
+                                    <ul class="space-y-1 list-disc ml-5">
+                                        <li>Motion Designer</li>
+                                        <li>Video Editor</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <aside class="space-y-6">
+                    <div
+                        class="p-6 rounded-2xl bg-gradient-to-b from-[#0b0b0b]/80 to-[#0e1013]/60 border border-gray-800 shadow-xl sticky top-12">
+                        <h3 class="text-sm text-gray-500 uppercase tracking-widest mb-6 font-semibold">Detail Info</h3>
+                        <div class="space-y-6">
+                            <div>
+                                <div class="text-xs text-gray-500 uppercase mb-1">Kategori</div>
+                                <div class="text-gray-200 font-medium">Motion Design / Vertical Video</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 uppercase mb-1">Tahun</div>
+                                <div class="text-gray-200 font-medium">2024</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 uppercase mb-2">Tools & Software</div>
+                                <div class="flex flex-wrap gap-3">
+                                    <span
+                                        class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-300">After
+                                        Effects</span>
+                                    <span
+                                        class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-300">Premiere
+                                        Pro</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+
+        <footer class="px-6 lg:px-12 py-10 border-t border-gray-900 text-xs text-gray-400">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>© 2025 Aslam — All rights reserved.</div>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="hover:text-brand-yellow transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-brand-yellow transition">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
