@@ -137,3 +137,21 @@ body {
 .animate-pulse-syaiful {
     animation: pulse-syaiful 6s ease-in-out infinite;
 }
+
+/* ========== Google Drive Portrait Video Fix ========== */
+.gdrive-portrait-container {
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.gdrive-portrait-container iframe {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 150% !important;
+    height: 150% !important;
+    transform: scale(0.666667) !important;
+    transform-origin: top left !important;
+    border: 0 !important;
+}
+
